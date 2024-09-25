@@ -1,0 +1,60 @@
+<div id="starter" ng-init="" ng-destroy="" data-component="crn-start" screen-params="[{'key':'id','type':'expression','value':''}]" screen-variables=""> 
+  <datasource data-component="crn-datasource" name="Teste" entity="app.Teste" keys="_objectKey" rows-per-page="100" on-before-create="" on-after-create="" on-before-update="" on-after-update="" on-before-delete="" on-after-delete="" on-after-fill="" lazy="false" schema="[{&quot;name&quot;:&quot;id&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;notEmpty&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;nome&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;notEmpty&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;quantidade&quot;,&quot;type&quot;:&quot;Int32&quot;,&quot;nullable&quot;:true,&quot;notEmpty&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;user&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;notEmpty&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;_objectKey&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;notEmpty&quot;:false,&quot;key&quot;:true},{&quot;name&quot;:&quot;user_name&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;notEmpty&quot;:false,&quot;key&quot;:false}]" condition="{&quot;maxRecord&quot;:100,&quot;params&quot;:[],&quot;expression&quot;:{&quot;type&quot;:&quot;AND&quot;,&quot;args&quot;:[{&quot;type&quot;:&quot;=&quot;,&quot;left&quot;:&quot;id&quot;,&quot;right&quot;:&quot;{{params.id|raw}}&quot;,&quot;args&quot;:[]}]}}" parameters="" dependent-lazy-post="" checkrequired=""></datasource> 
+  <div class="component-holder ng-scope col-md-12" data-component="crn-button" id="crn-button-878995"> 
+    <button class="btn k-button btn-block btn-default" ng-click="" xattr-fullsize="btn-block" xattr-theme="btn-default" xattr-disabled="" ng-init="cronapi.client('js.blockly.Bloco.chamaBackEMostraNatela').run()"><i class="glyphicon glyphicon-home" icon-theme=""></i> <span class="" text-theme="">Button</span></button> 
+  </div> 
+  <div class="component-holder ng-scope col-md-12" data-component="crn-tabs" id="crn-tabs-687149"> 
+    <div class="ctn-tab"> 
+      <ul class="nav nav-tabs" role="tablist"> 
+        <li role="presentation" class=""><a data-target="#tab1-9413" role="tab" data-toggle="tab" data-container="true">First Tab</a></li> 
+        <li role="presentation" class="active"><a data-target="#tab2-9413" role="tab" data-toggle="tab" data-container="true">Second Tab</a></li> 
+      </ul> 
+      <div class="tab-content"> 
+        <div role="tabpanel" class="tab-pane" id="tab1-9413"> 
+          <div data-container="true" data-replace="false"> 
+            <div class="component-holder ng-scope col-md-4" data-component="crn-textinput" id="crn-textinput-1027833"> 
+              <div class="form-group"> 
+                <label for="input4267">Label</label> 
+                <input type="text" mask="" mask-placeholder="" ng-required="false" ng-model="Teste.active.quantidade" class="form-control k-textbox" id="input4267" placeholder="Placeholder text"> 
+              </div> 
+            </div> 
+          </div> 
+        </div> 
+        <div role="tabpanel" class="tab-pane active" id="tab2-9413"> 
+          <div data-container="true" data-replace="true"> 
+            <section id="cron-picklist" ng-init="cronapi.client('js.blockly.Bloco.chamaBackEMostraNatela').run()"> 
+              <div class="primary-container"> 
+                <div class="panel-button"> 
+                  <button disabled=""> <img src="./public/assets/arrow-up.svg" alt="Arrow up"> </button> 
+                  <button> <img src="./public/assets/arrow-double-up.svg" alt="Arrow double up"> </button> 
+                  <button> <img src="./public/assets/arrow-double-down.svg" alt="Arrow double down"> </button> 
+                  <button><img src="./public/assets/arrow-down.svg" alt="Arrow down"></button> 
+                </div> 
+                <ul class="panel-cards" ng-model="vars.cursos"> 
+                  <li class="card-picklist {{rowData.selecionado ? 'selected' : '' }}" ng-repeat="rowData in vars.cursos" ng-click="cronapi.client('js.blockly.Controle.aoClicarSelecionaLinha').names('40570261', 'b2396fc2', '831cd2d4').run(vars.cursos, rowData, 'vars.cursos')">{{rowData.nome}}</li> 
+                </ul> 
+              </div> 
+              <div class="panel-button"> 
+                <button><img src="./public/assets/arrow-right.svg" alt="Arrow right"></button> 
+                <button> <img src="./public/assets/arrow-double-right.svg" alt="Arrow double right"> </button> 
+                <button> <img src="./public/assets/arrow-double-left.svg" alt="Arrow double left"> </button> 
+                <button><img src="./public/assets/arrow-left.svg" alt="Arrow left"></button> 
+              </div> 
+              <div class="primary-container"> 
+ <ul class="panel-cards" ng-model="vars.cursosUsuario"> 
+                  <li class="card-picklist {{rowData.selecionado ? 'selected' : '' }}" ng-repeat="rowData in vars.cursosUsuario" ng-click="cronapi.client('js.blockly.Controle.aoClicarSelecionaLinha').names('40570261', 'b2396fc2', '831cd2d4').run(vars.cursosUsuario, rowData, 'vars.cursosUsuario')">{{rowData.nome}}</li> 
+                </ul>  
+                <div class="panel-button"> 
+                  <button disabled=""> <img src="./public/assets/arrow-up.svg" alt="Arrow up"> </button> 
+                  <button> <img src="./public/assets/arrow-double-up.svg" alt="Arrow double up"> </button> 
+                  <button> <img src="./public/assets/arrow-double-down.svg" alt="Arrow double down"> </button> 
+                  <button><img src="./public/assets/arrow-down.svg" alt="Arrow down"></button> 
+                </div> 
+              </div> 
+            </section> 
+          </div> 
+        </div> 
+      </div> 
+    </div> 
+  </div> 
+</div>

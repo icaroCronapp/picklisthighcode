@@ -1,0 +1,1 @@
+[{"owner":"jdbc/main","resource":"file:///home/cronapp/project/diagram/app.umlcd","markers":[{"code":"953a0448-c2a4-40fb-bdad-d019edf3758b","severity":"ERROR","message":"O nome da entidade não é recomendado.","source":"jdbc/main","startLineNumber":1,"startColumn":1,"endLineNumber":1,"endColumn":1}]}]
